@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+<form >
+    <div class="header-main">
+        <a>Heroku</a>
+        <h1>Practicing https://signup.heroku.com/</h1>
+        <h1 > Sign up for free and experince Heroku today</h1>
+        
+    </div>
+    
+
+    <div class="signup-content">
+        <div class="signup-info">
+            <h2> Free account </h2>
+            <p>Create apps, connect 
+                databases and add-on services, and collaborate on your apps, for free.</p>
+            <hr>
+        <h2> Your app platform</h2>
+        <p>A platform for apps, with app management & instant scaling, for development and production.</p>
+        <hr>
+        <h2> Deploy Now</h2>
+        <p>Go from code to running app in minutes. Deploy, scale, and deliver your app to the world.</p>
+    </div>
+        
+        
+        <div class="registerform" id="registerInfo">
+            <h1>REGISTER</h1>
+            <div>
+                <label>First Name</label>
+                <input type="text" id="FirstNameInput" placeholder="First Name" required>
+            </div>
+            <div>
+                <label>Last Name</label>
+                <input type="text" id="LastNameInput" placeholder="Last Name" required>
+            </div>
+            <div>
+                <label>Email address</label>
+                <input type="email" id="EmailInput"  placeholder="Email address" required>
+            </div>
+            <div>
+                <label>Company Name</label>
+                <input type="text" id="CompanyInput" placeholder="Company Name" required>
+            </div>
+            <div>
+                <label>Role</label>
+                <select placeholder="Role" id="RoleInput" required>
+                    <option>Role</option>
+                    <option value="Student"> Student</option>
+                </select>
+            </div>
+            <div>
+                <label>Country</label>
+                <select placeholder="Country" id="CountryInput" required>
+                    <option>Country</option>
+                    <option value="USA">USA</option>
+                </select>
+            </div>
+            <div>
+                <label>Primary development language</label>
+                <select placeholder="Select a language" id="LanguageInput" required>
+                    <option>Select a language</option>
+                    <option value="C#">C#</option>
+                </select>
+            </div>
+            <hr/>
+            <div>
+                <button type="submit" class="submitBtn" 
+                 onclick="getInputValue();">CREATE FREE ACCOUNT</Button>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+</form>
+
+<script>
+function getInputValue() {
+    
+    let a = document.getElementById("FirstNameInput").value;
+    let b= document.getElementById("LastNameInput").value;
+    let c=document.getElementById("EmailInput").value;
+    let d=document.getElementById("CompanyInput").value;
+    let e= document.getElementById("RoleInput").value;
+    let f=document.getElementById("CountryInput").value;
+    let g=document.getElementById("LanguageInput").value;
+    
+        alert("First Name : "+ a+ 
+    "\n Last Name : " +b +
+    "\n Email : " +c +
+    "\n Compnay : " +d +
+    "\n Role : " +e+
+    "\n Country : " +f+
+    "\n Language : " +g );
+    
+    
+}
+</script>
+</body>
+</html>
