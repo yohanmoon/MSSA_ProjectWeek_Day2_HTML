@@ -8,10 +8,11 @@
 <body>
     
 <form >
+    <div class="wrapper">
     <div class="header-main">
-        <a>Heroku</a>
+        <a class="header-logo">HEROKU</a>
         <h1>Practicing https://signup.heroku.com/</h1>
-        <h1 > Sign up for free and experince Heroku today</h1>
+        <h1> Sign up for free and experince Heroku today</h1>
         
     </div>
     
@@ -51,21 +52,21 @@
             <div>
                 <label>Role</label>
                 <select placeholder="Role" id="RoleInput" required>
-                    <option>Role</option>
+                    <option value="">Role</option>
                     <option value="Student"> Student</option>
                 </select>
             </div>
             <div>
                 <label>Country</label>
                 <select placeholder="Country" id="CountryInput" required>
-                    <option>Country</option>
+                    <option value="">Country</option>
                     <option value="USA">USA</option>
                 </select>
             </div>
             <div>
                 <label>Primary development language</label>
                 <select placeholder="Select a language" id="LanguageInput" required>
-                    <option>Select a language</option>
+                    <option value="">Select a language</option>
                     <option value="C#">C#</option>
                 </select>
             </div>
@@ -76,33 +77,13 @@
             </div>
         </div>
     </div>
+    </div>
     
     
     
     
 </form>
 
-<script>
-function getInputValue() {
-    
-    let a = document.getElementById("FirstNameInput").value;
-    let b= document.getElementById("LastNameInput").value;
-    let c=document.getElementById("EmailInput").value;
-    let d=document.getElementById("CompanyInput").value;
-    let e= document.getElementById("RoleInput").value;
-    let f=document.getElementById("CountryInput").value;
-    let g=document.getElementById("LanguageInput").value;
-    
-        alert("First Name : "+ a+ 
-    "\n Last Name : " +b +
-    "\n Email : " +c +
-    "\n Compnay : " +d +
-    "\n Role : " +e+
-    "\n Country : " +f+
-    "\n Language : " +g );
-    
-    
-}
-</script>
+<script src="submit.js"></script>
 </body>
 </html>

@@ -1,15 +1,36 @@
-div.header-main{
- text-align: center;
+.header-main{
+ 
  padding: 100px 0 35px;
  position: relative;
  color: white;
 }
 
+.header-main h1{
+    margin: auto;
+    max-width: 400px;
+    text-align: center;
+}
 
+.header-logo{
+    position: absolute;
+    width: 150px;
+    height: 42px;
+    display: block;
+    top: 20px;
+    font-size: 30px;
+}
 body{
     background-color:#3A2778 ;
+    font-family: Arial, Helvetica, sans-serif;
 }
-div.signup-content{
+
+div h2{
+    margin: 0px 28px 15px;
+}
+div p{
+    margin: 0px 0px 30px;
+}
+.signup-content{
     position: relative;
     display: inline-block;
     top: 50%;
@@ -24,10 +45,10 @@ div.signup-content{
        box-shadow: 0px 0px 8px 5px rgba(0, 0, 0, .4);
        
 }
-div.signup-info h2{
+.signup-info h2{
 color: #79589F;
 }
-div.signup-info{
+.signup-info{
     position: relative;
     display: inline-block;
         width:400px;
@@ -36,7 +57,7 @@ div.signup-info{
       
 }
 
-div.registerform{
+.registerform{
     position:absolute;
     top:40px;
     right: -30px;
@@ -51,13 +72,18 @@ div.registerform{
 
 
 }
-div.registerform select{
-    width: 250px;
-    
+.registerform label{
+    padding: 0px 0px 5px;
+    display: block;
 }
-div.registerform input{
+
+.registerform select{
     width: 250px;
-    
+    padding: 10px
+}
+.registerform input{
+    width: 250px;
+    padding: 10px
 }
 
 .submitBtn{
@@ -66,4 +92,8 @@ div.registerform input{
     background-color: #0650AA;
     height: 50px;
     width: 250px;
+}
+.wrapper{
+    padding-left: 20px;
+    padding-right: 20px;
 }
